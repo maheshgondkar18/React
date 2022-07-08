@@ -7,8 +7,36 @@
     <title>Document</title>
     <script>
 
-        let a = 34;
-        console.log(a);
+        // let a = 34;
+        // console.log(a);
+
+        function hello(){
+            console.log("Hey Mahesh");
+        }
+        let obj ={
+            r:34,
+            m:64,
+            func: function myfunc(number){
+                console.log("The Number is" +number);
+            }
+        }
+
+        document.addEventListener("click",function click(){
+            console.log("Clicked..!");//confirm mostly used for deletion
+            let consf = confirm("are you sure?");
+            console.log(consf);
+        })
+
+        let arr=[34,21,23];
+        let  myfunc = (number)=>{
+            console.log("The Number is "+this);
+        }
+        myfunc();
+
+        setTimeout(()=>{
+            console.log("yayy");
+        },3000);
+        console.log("Last script");
     </script>
 </head>
 <body>
